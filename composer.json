@@ -1,5 +1,6 @@
 {
   "name": "iamthesoundman/php-sse",
+  "version": "2.0.5",
   "type": "library",
   "license": "MIT",
   "description": "A simple and efficient library implemented HTML5's server-sent events by PHP, is used to real-time push events from server to client, and easier than Websocket, instead of AJAX request.",
