@@ -37,6 +37,6 @@ $server->on('Request', function (Request $request, Response $response) use ($ser
         return json_encode(compact('news'));
         // return ['id' => uniqid(), 'data' => json_encode(compact('news'))]; // Custom event Id
     }, 'news');
-    (new SSESwoole($event, $request, $response))->start(3);
+    (new SSESwoole($event, $request, $response))->start(3000);
 });
 $server->start();
