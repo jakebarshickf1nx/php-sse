@@ -15,7 +15,7 @@ class SSE
      * Start SSE Server
      * @param int $interval
      */
-    public function start($interval = 3)
+    public function start($interval = 3000)
     {
         while (true) {
             echo $this->event->fill();
@@ -25,7 +25,7 @@ class SSE
             if (connection_aborted()) {
                 return;
             }
-            sleep($interval);
+            usleep($interval);
         }
     }
 
