@@ -25,7 +25,7 @@ class SSE
             if (connection_aborted()) {
                 return;
             }
-            usleep($interval);
+            usleep($interval * 1000);
         }
     }
 
